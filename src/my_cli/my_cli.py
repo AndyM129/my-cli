@@ -4,8 +4,6 @@ from my_cli.utils.aliased_group import AliasedGroup
 from my_cli.utils.click_ext import *
 from my_cli.utils.click_ctx_obj import ClickCtxObj
 from my_cli.utils.click_settings import *
-from my_cli.commands.click_examples import click_examples
-from my_cli.commands.rich_examples import rich_examples
 from my_cli.commands.hello import hello
 
 
@@ -33,8 +31,6 @@ def cli(ctx, debug, verbose):
 
 
 # 注册子命令
-cli.add_command(click_examples)
-cli.add_command(rich_examples)
 cli.add_command(hello)
 
 
